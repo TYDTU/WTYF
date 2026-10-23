@@ -1023,3 +1023,42 @@ button, input, select, textarea { font-family: "Palatino Linotype", "Book Antiqu
 .published-episode p { line-height: 1.7; }
 .published-episode .mini-button { display: inline-block; margin-top: 1rem; }
 @media(max-width: 700px) { .published-episodes { grid-template-columns: 1fr; } }
+
+.nomination-layout { display: grid; grid-template-columns: 1fr 1.15fr; gap: 3rem; align-items: start; }
+.nomination-layout p { line-height: 1.75; }
+.nomination-form { padding: 2rem; border: 1px solid #ed2a7c; background: #050505; }
+.nomination-form label:not(.format-option), .nomination-form legend { display: block; color: #fff; font-weight: 700; margin-bottom: .65rem; }
+.nomination-form fieldset { margin: 0 0 1.5rem; padding: 0; border: 0; }
+.format-option { display: flex; gap: .7rem; align-items: center; padding: .65rem 0; cursor: pointer; }
+.nomination-form input:not([type=radio]), .nomination-form textarea { width: 100%; display: block; box-sizing: border-box; padding: .8rem; margin-bottom: 1.5rem; border: 1px solid #777; background: #050505; color: #fff; font: inherit; border-radius: 0; }
+.nomination-form input[type=radio] { accent-color: #ed2a7c; width: 1.2rem; height: 1.2rem; }
+.nomination-form :focus-visible { outline: 2px solid #ed2a7c; outline-offset: 3px; }
+.nomination-form label span, .field-note { color: #b8b2b7; font-weight: 400; }
+.nomination-form .field-note { font-size: .95rem; margin-top: -.7rem; margin-bottom: 1.5rem; }
+.nomination-form textarea { resize: vertical; }
+.nomination-form button { white-space: normal; }
+@media(max-width: 760px) { .nomination-layout { grid-template-columns: 1fr; gap: 1.5rem; } .nomination-form { padding: 1.25rem; } }
+
+.para-mega-button { display: block; padding: 2rem; margin: 3rem 0; border: 2px solid #ed2a7c; background: #ed2a7c; color: #fff; text-align: center; font-size: clamp(1.6rem, 3vw, 2.7rem); font-weight: 700; line-height: 1.25; text-decoration: none; }
+.para-mega-button:hover { background: #050505; }
+.para-response-main { padding: 9rem 1rem 5rem; }
+.para-response-main h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+.response-intro { max-width: 760px; font-size: 1.25rem; line-height: 1.7; margin: 2rem 0; }
+.para-response-form { max-width: 850px; margin: 2rem 0; }
+.response-choices { display: grid; gap: 1rem; }
+.response-choice { display: flex; align-items: start; gap: 1rem; padding: 1.5rem; border: 1px solid #777; cursor: pointer; }
+.response-choice:has(input:checked) { border-color: #ed2a7c; background: rgba(237,42,124,.1); }
+.response-choice strong, .response-choice small { display: block; }
+.response-choice strong { font-size: 1.35rem; }
+.response-choice small { margin-top: .6rem; font-size: 1rem; font-weight: 400; line-height: 1.6; }
+.response-choice input { accent-color: #ed2a7c; flex-shrink: 0; margin-top: .4rem; }
+.para-response-form [hidden] { display: none; }
+.para-response-form h2 { font-size: 2rem; margin: 2rem 0; }
+.para-response-form select { font: inherit; color: #fff; background: #050505; border: 1px solid #777; width: 100%; padding: .8rem; margin-bottom: 1.5rem; }
+.headstone-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px, 280px)); gap: 2rem; margin: 3rem 0; }
+.headstone-link { min-height: 280px; border: 2px solid #ed2a7c; border-radius: 50% 50% 0 0 / 35% 35% 0 0; padding: 3.5rem 1.5rem 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1rem; text-align: center; text-decoration: none; }
+.headstone-link strong { font-size: 2rem; color: #fff; }
+.headstone-link:hover { background: rgba(237,42,124,.12); }
+.headstone-symbol { color: #ed2a7c; font-size: 2rem; }
+.headstone-empty { padding: 2rem 0; color: #b8b2b7; }
+@media(max-width:620px) { .response-choice { padding: 1rem; } .para-response-main { padding-top: 7rem; } .para-mega-button { padding: 1.5rem 1rem; } }

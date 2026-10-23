@@ -30,6 +30,7 @@
           <a href="#about">About</a>
           <a href="#episodes">Episodes</a>
           <a href="#para-portion">The Para Portion</a>
+          <a href="#nominate">Suggest Someone</a>
           <a href="#how-it-works">How It Works</a>
         </div>
       </nav>
@@ -50,6 +51,7 @@
           <h1 id="hero-title">Welcome To Your Funeral</h1>
 <p class="hero-copy">Quirky. Irreverent. A celebration of life with Dr. Virginia Cylke and Dr. Beth Savage. Write your obituary, hear the love, and be here to enjoy it.</p>
           <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-secondary" href="#nominate">Suggest Someone</a>
             <a class="button button-primary" href="https://open.spotify.com/show/1ZlLJpXgw4GL21B42FAfNk">Listen on Spotify</a>
             <a class="button button-secondary" href="#how-it-works">The Traditional Show</a>
             <a class="button button-secondary" href="#para-portion">The Para Portion</a>
@@ -127,6 +129,7 @@
               <p>Listeners guess how close they think we came, and why. What feels plausible? Where did our imaginary friendship take a spectacular detour?</p>
             </article>
           </div>
+          <a class="para-mega-button" href="paraobitted.html">If we paraobited you and you want to share click here <span aria-hidden="true">→</span></a>
           <div class="para-invitation">
             <p class="section-kicker">A formal invitation, with absolutely no pressure</p>
             <h3>Come right our wrongs.</h3>
@@ -138,6 +141,35 @@
       </section>
 
 
+
+      <section class="section nomination-section" id="nominate" aria-labelledby="nomination-title">
+        <div class="section-inner nomination-layout">
+          <div>
+            <p class="section-kicker">Put someone on our radar</p>
+            <h2 id="nomination-title">Who should we take a stab at?</h2>
+            <p>Someone in your life who deserves their flowers? Or someone you admire from afar and would love to hear us imagine an obituary for? Tell us who, and tell us why.</p>
+            <p><strong>The traditional show:</strong> a real one-on-one Obituary conversation, our behind-the-scenes magic, and a Funeral episode with the guest.</p>
+            <p><strong>Parasocial Relationships:</strong> positive admiration, our completely made-up answers, and an invitation to come right our wrongs. All love. No hurt feelings.</p>
+          </div>
+          <form class="nomination-form" action="https://formsubmit.co/welcometoyourfuneralpodcast@gmail.com" method="POST" aria-describedby="nomination-note"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="https://wtyf-podcast-preliminary.abuzzraven37.chatgpt.site/thank-you.html"><div hidden aria-hidden="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-label="Leave empty"></div><input type="hidden" name="_subject" value="WTYF: New guest nomination">
+            <fieldset><legend>Which format are you suggesting them for?</legend>
+              <label class="format-option"><input type="radio" name="format" value="traditional" required> The traditional show</label>
+              <label class="format-option"><input type="radio" name="format" value="parasocial" required> Parasocial Relationships</label>
+            </fieldset>
+            <label for="nominee">Who are you nominating?</label>
+            <input id="nominee" name="nominee" maxlength="160" required autocomplete="off" placeholder="Their name">
+            <label for="nominee-link">A public link to help us find them <span>(optional)</span></label>
+            <input id="nominee-link" name="publicLink" type="url" maxlength="500" placeholder="https://" aria-describedby="public-link-note">
+            <p class="field-note" id="public-link-note">A website or public profile is perfect. Please leave out private contact information.</p>
+            <label for="nomination-reason">Why this person?</label>
+            <textarea id="nomination-reason" name="reason" rows="5" maxlength="3000" required placeholder="What makes them special? Why would you love to hear them on the show?"></textarea>
+            <label for="nomination-email">Your email <span>(optional, for follow-up)</span></label><input id="nomination-email" name="email" type="email" maxlength="254" autocomplete="email"><label for="submitter-name">Your name <span>(optional)</span></label>
+            <input id="submitter-name" name="submitterName" maxlength="100" autocomplete="given-name">
+            <p class="field-note" id="nomination-note">Your nomination is processed by FormSubmit, sent to Virginia and Beth’s podcast inbox, and saved there. A nomination is a suggestion, not a promise of an episode. Please leave out sensitive or private information about other people.</p>
+            <button class="button button-primary" type="submit">Send your nomination</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -151,6 +183,7 @@
           <a href="#about">About</a>
           <a href="#episodes">Episodes</a>
           <a href="#para-portion">The Para Portion</a>
+          <a href="#nominate">Suggest Someone</a>
         </div>
         <div class="footer-meta">
           <span>&copy; 2026 Welcome To Your Funeral Podcast</span>
@@ -158,6 +191,6 @@
       </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="scripts.js"></script><script src="form-config.js"></script>
   </body>
 </html>
