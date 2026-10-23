@@ -1015,3 +1015,11 @@ h1, h2, h3, h4, h5, h6 { font-family: "Palatino Linotype", "Book Antiqua", Palat
 .section-kicker, .eyebrow, .card-label, .tag-row, nav, button, input { font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif; }
 
 button, input, select, textarea { font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif; }
+
+.published-episodes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+.published-episode { padding: 1.8rem; border: 1px solid rgba(237,42,124,.35); background: #050505; }
+.published-episode:first-child { grid-column: 1 / -1; border-color: #ed2a7c; }
+.published-episode h3 { font-size: 1.8rem; margin: .6rem 0 1rem; }
+.published-episode p { line-height: 1.7; }
+.published-episode .mini-button { display: inline-block; margin-top: 1rem; }
+@media(max-width: 700px) { .published-episodes { grid-template-columns: 1fr; } }
