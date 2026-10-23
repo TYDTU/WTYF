@@ -20,33 +20,3 @@ if (navToggle && navLinks) {
   });
 }
 
-document.querySelectorAll("[data-shop-button]").forEach((button) => {
-  button.addEventListener("click", () => {
-    const originalLabel = button.textContent;
-    button.textContent = "Added";
-    button.disabled = true;
-
-    window.setTimeout(() => {
-      button.textContent = originalLabel;
-      button.disabled = false;
-    }, 1400);
-  });
-});
-
-const newsletterForm = document.querySelector(".newsletter-form");
-
-if (newsletterForm) {
-  newsletterForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const button = newsletterForm.querySelector("button");
-    const input = newsletterForm.querySelector("input");
-
-    if (button && input) {
-      button.textContent = "Joined";
-      input.value = "";
-      window.setTimeout(() => {
-        button.textContent = "Join";
-      }, 1800);
-    }
-  });
-}
