@@ -1079,3 +1079,19 @@ button, input, select, textarea { font-family: "Palatino Linotype", "Book Antiqu
 }
 .brand-lockup img, .footer-brand img { width: 56px; height: 56px; }
 .hero-logo { width: 136px; height: 136px; padding: 10px; border-radius: 20px; }
+
+/* Original photos: complete frames, original colors, no image effects. */
+.photo-hero { display: block; min-height: 0; padding-top: 8rem; background: #050505; }
+.hero-photo-layout { width: min(100%, 1320px); margin: auto; display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.photo-hero .hero-content { width: 100%; }
+.photo-hero h1 { font-size: clamp(2.8rem, 5vw, 5rem); }
+.hero-original-photo { margin: 0; border: 1px solid #ed2a7c; padding: 10px; background: #050505; }
+.hero-original-photo img, .original-gallery img, .photo-feature img { display: block; width: 100%; height: auto; object-fit: contain; filter: none; opacity: 1; transform: none; border-radius: 0; }
+.hero-original-photo figcaption { text-align: center; padding: .8rem 0 .2rem; color: #fff; font-size: 1.2rem; }
+.original-gallery-section { border-top: 1px solid rgba(237,42,124,.3); }
+.photo-feature, .original-gallery figure { margin: 0; padding: 10px; border: 1px solid rgba(237,42,124,.55); background: #050505; }
+.photo-feature { margin: 2.5rem 0; }
+.original-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+.original-gallery a, .photo-feature a, .hero-original-photo a { display: block; }
+@media (max-width: 820px) { .hero-photo-layout { grid-template-columns: 1fr; gap: 2.5rem; } .hero-original-photo { width: min(100%, 560px); margin-inline: auto; } }
+@media (max-width: 620px) { .original-gallery { grid-template-columns: 1fr; gap: 1.5rem; } .photo-feature, .original-gallery figure { padding: 6px; } }
