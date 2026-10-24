@@ -1062,3 +1062,8 @@ button, input, select, textarea { font-family: "Palatino Linotype", "Book Antiqu
 .headstone-symbol { color: #ed2a7c; font-size: 2rem; }
 .headstone-empty { padding: 2rem 0; color: #b8b2b7; }
 @media(max-width:620px) { .response-choice { padding: 1rem; } .para-response-main { padding-top: 7rem; } .para-mega-button { padding: 1.5rem 1rem; } }
+
+.reviews-section { border-top: 1px solid rgba(237,42,124,.35); }
+.nomination-form select { width: 100%; padding: .8rem; margin-bottom: 1.5rem; color: #fff; background: #050505; font: inherit; border: 1px solid #777; }
+.nomination-form .review-consent { display: flex; align-items: start; gap: .8rem; line-height: 1.6; font-weight: 400; margin: 1.5rem 0; }
+.nomination-form .review-consent input { flex: 0 0 auto; width: 1.2rem; margin-top: .3rem; accent-color: #ed2a7c; }
