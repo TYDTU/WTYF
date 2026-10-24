@@ -1095,3 +1095,16 @@ button, input, select, textarea { font-family: "Palatino Linotype", "Book Antiqu
 .original-gallery a, .photo-feature a, .hero-original-photo a { display: block; }
 @media (max-width: 820px) { .hero-photo-layout { grid-template-columns: 1fr; gap: 2.5rem; } .hero-original-photo { width: min(100%, 560px); margin-inline: auto; } }
 @media (max-width: 620px) { .original-gallery { grid-template-columns: 1fr; gap: 1.5rem; } .photo-feature, .original-gallery figure { padding: 6px; } }
+
+/* Hide only the supplied white margins; original files and photo pixels stay intact. */
+.photo-window { display: block; position: relative; width: 100%; overflow: hidden; aspect-ratio: 1080 / 718; }
+.photo-window img { position: absolute; left: 0; width: 100%; max-width: none; height: auto; }
+.photo-trim-standard img { top: -15.0418%; }
+.photo-trim-walking img { top: -24.5125%; }
+.hero-original-photo, .photo-feature, .original-gallery figure {
+  border: 3px double #ed2a7c;
+  padding: 12px;
+  background: #050505;
+  box-shadow: 0 12px 30px rgba(0,0,0,.35);
+}
+@media(max-width:620px) { .hero-original-photo, .photo-feature, .original-gallery figure { padding: 8px; } }
