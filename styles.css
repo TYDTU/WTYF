@@ -1067,3 +1067,15 @@ button, input, select, textarea { font-family: "Palatino Linotype", "Book Antiqu
 .nomination-form select { width: 100%; padding: .8rem; margin-bottom: 1.5rem; color: #fff; background: #050505; font: inherit; border: 1px solid #777; }
 .nomination-form .review-consent { display: flex; align-items: start; gap: .8rem; line-height: 1.6; font-weight: 400; margin: 1.5rem 0; }
 .nomination-form .review-consent input { flex: 0 0 auto; width: 1.2rem; margin-top: .3rem; accent-color: #ed2a7c; }
+
+/* Cream belongs only behind the logo to reveal the black headstone. */
+.brand-lockup img, .footer-brand img, .hero-logo {
+  background: #fff4df;
+  border: 1px solid #fff4df;
+  border-radius: 12px;
+  padding: 5px;
+  object-fit: contain;
+  filter: none;
+}
+.brand-lockup img, .footer-brand img { width: 56px; height: 56px; }
+.hero-logo { width: 136px; height: 136px; padding: 10px; border-radius: 20px; }
